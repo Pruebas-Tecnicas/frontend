@@ -6,8 +6,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes} from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { LoginComponent } from './login/login.component';
-import { RegistroComponent } from './registro/registro.component';
+import { LoginComponent } from './usuario/login/login.component';
+import { RegistroComponent } from './usuario/registro/registro.component';
 import { FormularioComponent } from './formulario/formulario.component';
 
 /*

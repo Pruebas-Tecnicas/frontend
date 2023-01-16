@@ -19,7 +19,7 @@ export class FormularioComponent {
   public create(): void {
     this.formularioService.create(this.formulario).subscribe(
       formulario => {
-        this.router.navigate(['/login']);
+        this.router.navigate(['/home']);
         swal.fire('Registro exitoso', `¡Los datos se guardaron correctamente!`, 'success');
       },
       err => {

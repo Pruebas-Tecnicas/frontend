@@ -9,12 +9,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './usuario/login/login.component';
 import { RegistroComponent } from './usuario/registro/registro.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { HomeComponent } from './home/home.component';
 
 /*
  * Aquí defino las rutas para acceder a componentes html de la app.
  */
 const ROUTES: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'registro', component: RegistroComponent},
   {path: 'formulario', component: FormularioComponent},
@@ -26,7 +28,8 @@ const ROUTES: Routes = [
     NavbarComponent,
     RegistroComponent,
     LoginComponent,
-    FormularioComponent
+    FormularioComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

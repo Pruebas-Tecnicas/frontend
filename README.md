@@ -1,27 +1,31 @@
-# Frontend
+# Descripción del proyecto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+Este proyecto forma parte de la prueba tecnica realizada para la empresa BIM. Su proposito es de frontend proporcionando la interacción entre el usuario final y el servidor.
 
-## Development server
+## Herramientas usadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Typescript 4
+* Node 16
+* Angular 15
+* HTML
+* Bootstrap 5
+* SweetAlert2
 
-## Code scaffolding
+## Requisitos para ejecutar la aplicación
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Esta aplicación es capaz de ejecutarse en local arrancando con comandos de Angular desde la terminal de comandos. El comando usado para ejecutar la app es: ng serve -o 
 
-## Build
+Para ejecutar la app se deben cumplir los siguientes requisitos:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Tener instalado Angular para ejectar comandos ng
+* Tener instalado NPM en caso de necesitar algun paquete (opcional)
+* Tener permisos para ejecutar comandos ng desde la terminal
+* El puerto 4200 debe estar libre ya que este es el puerto que se registró en el backend para cross origin
+* El backend desde estar levantado en el puerto 8080 ya que este es el puerto configurado en el frontend para buscar al backend
 
-## Running unit tests
+## Pendientes de la app
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+La funcionalidad de login y logout no funcionan como se espera.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* Se debe iniciar sesión para poder acceder al formlario para guardar estado, municipio y CP.
+* Se debe iniciar sesión para que el boton de logout se muestre.

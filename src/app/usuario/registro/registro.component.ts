@@ -17,13 +17,15 @@ export class RegistroComponent {
     private router: Router) { }
 
   public create(): void {
+
+    this.usuario.password = btoa(this.usuario.password)
+
     this.usuarioService.create(this.usuario).subscribe(
       usuario => {
         this.router.navigate(['/login']);
         swal.fire('Registro exitoso', `¡Usuario ${usuario.username} creado(a) con éxito!`, 'success');
       },
       err => {
-
         if (err.status == 400) {
           console.error('Código del error desde el backend: ' + err.status);
           console.error(err.error.errors);
